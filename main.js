@@ -1,5 +1,5 @@
 // From tutorial https://www.freecodecamp.org/news/building-a-simple-url-shortener-with-just-html-and-javascript-6ea1ecda308c/
-var endpoint = "https://www.jsonstore.io/4854b44d8da280ff6d53fb4b66d7e536310bf40d793c9b8cee1675a34cba2336";
+var endpoint = "";
 
 function geturl() {
   var url = document.getElementById("urlinput").value;
