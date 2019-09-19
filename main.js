@@ -1,5 +1,6 @@
 // From tutorial https://www.freecodecamp.org/news/building-a-simple-url-shortener-with-just-html-and-javascript-6ea1ecda308c/
-var endpoint = "";
+//var endpoint = "https://www.jsonstore.io/df9b564152d09293acca2e59de27bf38426b5cc9f58034bc9dc8d4900614a2ba";  //true endpoint
+var endpoint = "https://www.jsonstore.io/4854b44d8da280ff6d53fb4b66d7e536310bf40d793c9b8cee1675a34cba2336";  //tester endpoint
 
 function geturl() {
   var url = document.getElementById("urlinput").value;
@@ -14,7 +15,7 @@ function geturl() {
 
 function getrandom() {
   var text = "";
-  var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  var possible = "abdefghijmnqrty23456789";  //list of all valid, non-confusing, lowercase characters (for random only)
   
   for (var i = 0; i < 5; i++)
     text += possible.charAt(Math.floor(Math.random() * possible.length));
