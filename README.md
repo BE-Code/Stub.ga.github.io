@@ -1,2 +1,2 @@
 # Stub.ga
-My personalized link shortener
+My Personalized Link Shortener
