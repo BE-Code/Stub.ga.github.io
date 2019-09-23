@@ -1,1 +1,1 @@
-# Stub.ga.github.io
+# Stub.ga
