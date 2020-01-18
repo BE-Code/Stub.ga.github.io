@@ -45,15 +45,18 @@ function shorturl() {
   send_request(longurl);
 }
 
+function getEndpointData(hashName) {
+  $.getJSON(endpoint + "/" + hashh, function (data) {
+    data = data["result"];
+    return data;
+  });
+}
+
 var hashh = window.location.hash.substr(1);
 
 if (window.location.hash != "") {
-  $.getJSON(endpoint + "/" + hashh, function (data) {
-    data = data["result"];
-    
-    if (data != null) {
-      window.location.href = data;
-    }
-    
-  });
+  data = getEndpointData(hashh);
+  if (data != null) {
+    window.location.href = data;
+  }
 }
